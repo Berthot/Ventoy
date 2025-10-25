@@ -1,0 +1,68 @@
+# Template de Configuração SSH para CasaOS Server
+# Copie este arquivo para ~/.ssh/config e ajuste os valores
+
+# Configuração principal do servidor CasaOS
+Host casaos-server
+    HostName SEU_IP_DO_SERVIDOR
+    User SEU_USUARIO
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+
+# Configuração alternativa (sem alias)
+Host SEU_IP_DO_SERVIDOR
+    User SEU_USUARIO
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+
+# Configuração para múltiplos servidores (exemplo)
+# Host servidor-backup
+#     HostName 192.168.1.101
+#     User admin
+#     Port 22
+#     IdentityFile ~/.ssh/id_rsa_backup
+#     StrictHostKeyChecking no
+
+# Configuração para túnel SSH (port forwarding)
+# Host tunnel-casaos
+#     HostName SEU_IP_DO_SERVIDOR
+#     User SEU_USUARIO
+#     LocalForward 8080 localhost:80
+#     LocalForward 8443 localhost:443
+#     IdentityFile ~/.ssh/id_rsa
+
+# Configurações globais
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentitiesOnly yes
+    Compression yes
+    ForwardAgent no
+    ForwardX11 no
+    ForwardX11Trusted no
+    LogLevel INFO
+
+# Explicação dos parâmetros:
+# =========================
+# HostName: IP ou domínio do servidor
+# User: Nome do usuário para login
+# Port: Porta SSH (padrão: 22)
+# IdentityFile: Caminho para a chave privada
+# StrictHostKeyChecking: Verificar fingerprint do servidor (no/yes)
+# UserKnownHostsFile: Arquivo de hosts conhecidos (/dev/null = não salvar)
+# ServerAliveInterval: Enviar keep-alive a cada X segundos
+# ServerAliveCountMax: Máximo de tentativas de keep-alive
+# AddKeysToAgent: Adicionar chaves ao ssh-agent automaticamente
+# UseKeychain: Usar keychain do sistema (macOS)
+# IdentitiesOnly: Usar apenas chaves especificadas
+# Compression: Usar compressão na conexão
+# ForwardAgent: Encaminhar ssh-agent
+# ForwardX11: Encaminhar X11
+# LogLevel: Nível de log (QUIET, FATAL, ERROR, INFO, VERBOSE, DEBUG)

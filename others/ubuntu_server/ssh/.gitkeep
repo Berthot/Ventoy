@@ -1,0 +1,11 @@
+# Esta pasta é para armazenar chaves SSH
+# 
+# Coloque aqui:
+# - id_rsa (chave privada)
+# - id_rsa.pub (chave pública)
+# - Outras chaves SSH conforme necessário
+#
+# IMPORTANTE: Mantenha as chaves privadas seguras!
+# - Use permissões corretas (chmod 600)
+# - Não compartilhe chaves privadas
+# - Considere usar senhas nas chaves

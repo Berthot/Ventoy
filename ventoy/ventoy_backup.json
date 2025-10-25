@@ -1,0 +1,19 @@
+{
+    "control":[
+        { "VTOY_MENU_LANGUAGE": "pt_BR" }
+    ],
+    "menu_alias": [
+        { "image": "/ISO/EndeavourOS_Cinnamon_2025.03.19.iso", "alias": "EndeavourOS Cinnamon 2025.03.19" },
+        { "image": "/ISO/Manjaro_KDE_25.0.6.iso",              "alias": "Manjaro KDE 25.0.6" },
+        { "image": "/ISO/Manjaro_XFCE_25.0.5.iso",             "alias": "Manjaro XFCE 25.0.5" },
+        { "image": "/ISO/Ubuntu_GNOME_25.04.iso",              "alias": "Ubuntu GNOME 25.04" },
+        { "image": "/ISO/Windows_11_24H2.iso",                 "alias": "Windows 11 24H2" }
+    ],
+    "image_list":[
+        "/ISO/EndeavourOS_Cinnamon_2025.03.19.iso",
+        "/ISO/Manjaro_KDE_25.0.6.iso",
+        "/ISO/Manjaro_XFCE_25.0.5.iso",
+        "/ISO/Ubuntu_GNOME_25.04.iso",
+        "/ISO/Windows_11_24H2.iso"
+    ]
+}

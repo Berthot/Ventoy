@@ -1,0 +1,31 @@
+{
+    "control":[
+        { "VTOY_MENU_LANGUAGE": "pt_BR" }
+    ],
+    "theme":{
+        "file": "/ventoy/themes/fallout/theme.txt",
+        "gfxmode": "max",
+        "fonts":[
+            "/ventoy/themes/fallout/fixedsys-regular-32.pf2"
+        ]
+    },
+    "menu_alias":[
+        {
+            "image": "/ISO/pop-os_22.04_amd64_intel_58.iso",
+            "alias": "Pop!_OS 22.04 LTS"
+        },
+        {
+            "image": "/ISO/ubuntu-22.04.5-live-server-amd64.iso",
+            "alias": "Ubuntu Server 22.04.5 LTS"
+        },
+        {
+            "image": "/ISO/Windows_11_24H2.iso",
+            "alias": "Windows 11 24H2"
+        }
+    ],
+    "image_list":[
+        "/ISO/pop-os_22.04_amd64_intel_58.iso",
+        "/ISO/ubuntu-22.04.5-live-server-amd64.iso",
+        "/ISO/Windows_11_24H2.iso"
+    ]
+}
